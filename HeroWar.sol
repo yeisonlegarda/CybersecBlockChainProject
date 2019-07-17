@@ -24,7 +24,7 @@ contract HeroWar is HeroAvatar {
     kittyInterface myKitty = kittyInterface(ckAdrress);
 
     function _triggerDownHero(Hero storage myHero) internal{
-        myHero.readyTime = uint32(1 days + now);
+        myHero.readyTime = uint32(15 minutes + now);
     }
 
     function _isReady(Hero storage myHero) internal view returns(bool) {

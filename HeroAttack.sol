@@ -21,7 +21,7 @@ contract HeroAttack is HeroHelper {
             villain.lossCount++;
             FigthAndInclude(_heroId,_targetId);
         }else{
-            myHero.lossCount--;
+            myHero.lossCount++;
             villain.winCount++;
         }
          _triggerDownHero(myHero);
